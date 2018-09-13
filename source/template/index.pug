@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title LONGEVITY TOKEN
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', crossorigin='anonymous')
+        link(rel='stylesheet' href='assets/css/style.css')
+
+    body
+        include common/header
+        main.container-fluid.pl-0
+            .row
+                .col-md-4
+                    include common/catalog
+                .col-md-8
+                    include common/content
+        script(src="assets/js/jquery.js")
+        script(src="assets/js/popper.js")
+        script(src="assets/js/bootstrap.js")
