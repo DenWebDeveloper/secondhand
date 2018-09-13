@@ -1,4 +1,10 @@
 @import "common/bootstrap";
+@import "common/header";
+@import "common/header-catalog";
+@import "common/products-overview";
+@import "common/product-details";
+@import "common/shopping-cart";
+@import "common/purchase-order";
 
 ul {
   list-style: none;
