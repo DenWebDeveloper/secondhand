@@ -1,20 +1,17 @@
 section
     .container
-        .row.align-items-stretch
-            .col-md-3.pr-0
-                each val in [1, 2, 3, 4, 5,7,8]
-                    .dropdown.dropright
+        .row.align-items-start
+            .catalog.col-md-3.pr-md-0
+                each val1 in [1, 2, 3, 4, 5,7,8]
+                    .dropdown.catalog__dropdown
                         button.pb-3.pt-3.catalog__toggle.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                             | Dropleft
-                        .dropdown-menu.p-0.border-0
+                        .dropdown-menu.catalog__dropdown-menu.p-0.border-0
                             ul.list-unstyled.mb-0
-                                li
-                                    a.catalog__link.btn(href="#") aa
-                                li
-                                    a.catalog__link.btn(href="#") aa
-                                li
-                                    a.catalog__link.btn(href="#") aa
-            .col-md-9.pl-0
+                                each val in [1, 2, 3, 4, 5,7,8,9,0]
+                                    li
+                                        a.catalog__link.btn(href="#") aa #{val + val1}
+            .col-md-9.pl-md-0.mt-4.mt-md-0#banner-carousel
                 #carousel-catalogIndicators.carousel.slide(data-ride='carousel')
                     ol.carousel-indicators
                         li.active(data-target='#carousel-catalogIndicators', data-slide-to='0')
@@ -22,14 +19,8 @@ section
                         li(data-target='#carousel-catalogIndicators', data-slide-to='2')
                     .carousel-inner
                         .carousel-item.active
-                            img.d-block.w-100(src='https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=First slide', alt='First slide')
+                            img.d-block.w-100.h-100(src='https://cnet2.cbsistatic.com/img/TjSrJIr-Q5ZM2MwRd_5sPtmll0A=/1600x900/2017/08/10/ba4cdebe-8ae6-406d-b016-81db2a4a84dc/screen-shot-2017-08-10-at-1-03-35-pm.png', alt='First slide')
                         .carousel-item
-                            img.d-block.w-100(src='https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=Второй slide', alt='First slide')
+                            img.d-block.w-100.h-100(src='http://www.vladtime.ru/uploads/posts/2017-11/1510471796_1508501310_iphone7concept.jpg', alt='First slide')
                         .carousel-item
-                            img.d-block.w-100(src='https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=3 slide', alt='First slide')
-                    a.carousel-control-prev(href='#carousel-catalogIndicators', role='button', data-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.sr-only Previous
-                    a.carousel-control-next(href='#carousel-catalogIndicators', role='button', data-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.sr-only Next
+                            img.d-block.w-100.h-100(src='https://ksassets.timeincuk.net/wp/uploads/sites/54/2018/05/s10.jpg', alt='First slide')

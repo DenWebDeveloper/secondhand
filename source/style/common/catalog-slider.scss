@@ -1,14 +1,18 @@
-.catalog {
-  background-color: #565b6f;
-}
+//.catalog {
+//  position: relative;
+//}
 
-.catalog .card-header {
-  padding: 0;
-}
+//.catalog__dropdown {
+//  position: static;
+//}
+//
+//.catalog__dropdown-menu {
+//  left: 100% !important;
+//  transform: translateY(0) !important;
+//}
 
-.catalog .card {
-  background-color: transparent;
-  border-bottom: 1px solid #4a5060;
+.catalog__dropdown-menu {
+  width: 100%;
 }
 
 .catalog__link,

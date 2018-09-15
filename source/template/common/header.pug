@@ -1,7 +1,7 @@
 header
     .container
         .row.border-bottom.align-items-center
-            .col-md-3.py-3
+            .col-6.col-sm-4.py-3
                 ul.socials.d-flex.list-unstyled
                     li.socials__item
                         a.socials__link(href='#')
@@ -16,19 +16,19 @@ header
                     li.socials__item
                         a.socials__link(href='#')
                             i.fab.fa-instagram
-            .col-md-4.col-lg-3.text-muted.ml-auto.py-3
+            .col-7.col-sm-5.col-lg-3.text-muted.ml-auto.py-3
                 small
                     i.far.fa-envelope
                     a.text-muted.font-weight-bold(href="mailto:testgmail.g@gmail.com") testgmail.g@gmail.com
-            .col-md-2.py-3
+            .col-5.col-sm-3.col-lg-2.py-3
                 small.text-muted.font-weight-bold <i class="far fa-clock"></i> 9:00 - 18:00
     .container
-        nav.navbar-expand-lg
-            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarTogglerDemo01.collapse.navbar-collapse
-                a.navbar-brand(href='#') SECONDHAND
-                ul.navbar-nav.ml-auto
+        nav.navbar-expand-lg.d-flex.justify-content-between.align-items-center.flex-wrap
+            a.navbar-brand(href='#') SECONDHAND
+            button.ml-a.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')
+                span.fas.fa-bars
+            #navbarTogglerDemo01.collapse.navbar-collapse.w-lg-100.p-0
+                ul.navbar-nav.ml-auto.w-100.d-flex.justify-content-end
                     li.nav-item
                         a.nav-link(href='#') Про нас
                     li.nav-item
