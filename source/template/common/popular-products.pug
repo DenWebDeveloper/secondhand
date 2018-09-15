@@ -1,16 +1,22 @@
-section
+section.popular-products
     .container
         .row
-            .col-md-12
-                h2 Popular products
-        .swiper-container
+            .popular-products__header.col-md-12.f-flex
+                h2.py-4
+                    i3.fas.fa-fire.mr-3
+                    span Popular products
+        .swiper-container.popular-products__body.pt-5
             .swiper-wrapper
                 each val in [1, 2, 3, 4, 5,7,8]
                     .swiper-slide.text-center
                         a(href="#")
                             img(src="https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=First slide")
-                            h3 lorem lorem
+                            h3.mt-2 lorem lorem
                             div $75.00
-                            ul.stars
+                            ul.stars.list-unstyled.d-flex.justify-content-center.pt-2.pb-4
+                                li
+                                li
+                                li
+                                li
                                 li
             .swiper-pagination

@@ -1,0 +1,34 @@
+.popular-products {
+  margin-bottom: 50px;
+}
+
+.popular-products .stars li {
+  width: 18px;
+  height: 17px;
+  margin-right: 3px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+}
+
+.popular-products a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fa-fire {
+  color: #dd2726;
+}
+
+.popular-products__header {
+  border-bottom: 3px solid #dd2726;
+}
+
+.popular-products__header,
+.popular-products__body {
+  background-color: #ffffff;
+}
+
+.popular-products__header span {
+  color: #dd2726;
+}
