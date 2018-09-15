@@ -1,23 +1,31 @@
+$grey: #545454;
+
 @import "common/bootstrap";
 @import "common/header";
+@import "common/submenu";
+@import "common/catalog-slider";
+
 @import "common/header-catalog";
 @import "common/products-overview";
 @import "common/product-details";
 @import "common/shopping-cart";
 @import "common/purchase-order";
 
-ul {
-  list-style: none;
-}
-@import "common/header";
 @import "common/socials";
 
-nav {
-  background-color: #191717;
+body {
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
-.navbar-brand {
-  font-size: 20px;
+.btn-orange {
+  background-color: #ff9801;
+  border-color: #ff9801;
+  color: #fff;
+
+  &:hover {
+    background-color: darken(#ff9801, 10%);
+    border-color: darken(#ff9801, 15%);
+  }
 }
 
 .collapse.navbar-collapse {
@@ -25,20 +33,7 @@ nav {
   padding: 15px 10px;
 }
 
-.navbar-brand {
-  color: #fff;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: #fff;
-}
-
 .sub-nav {
   display: flex;
   align-items: center;
-}
-
-main {
-  display: flex;
 }

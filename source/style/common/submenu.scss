@@ -1,0 +1,36 @@
+.submenu {
+  background-color: #f0f0f0;
+}
+
+.language,
+.language__text,
+.basket {
+  color: $grey;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #121212;
+    font-weight: bolder;
+  }
+}
+
+.language__icon,
+.basket__icon {
+  font-size: 25px;
+}
+
+.basket__count {
+  border-radius: 30%;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 3px;
+  padding: 3px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+  background-color: #fd9800;
+}
+

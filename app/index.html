@@ -6,12 +6,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row">
+        <div class="row border-bottom">
           <div class="col-md-2">
             <ul class="socials d-flex unstyled-list">
               <li class="socials__item"><a class="socials__link" href="#">facebook</a></li>
@@ -41,94 +43,127 @@
       </div>
     </header>
     <main>
-      <div class="submenu">
+      <section class="submenu p-3 shadow">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-md-8">
               <form>
                 <div class="form-row">
                   <input class="col-md-11 form-control" type="email" name="search" placeholder="Поиск по каталогу">
-                  <button class="col-md-1 btn btn-primary" type="submit"></button>
+                  <button class="col-md-1 btn btn-orange" type="submit"><i class="fas fa-search"></i></button>
                 </div>
               </form>
             </div>
-            <div class="col-md-2"><a href="#">Укр</a><a href="#">En</a></div>
-            <div class="col-md-2"><a href="#"><span>12</span>Корзина</a></div>
+            <div class="col-md-2 ml-auto language"><i class="language__icon fas fa-language mr-1"></i><a class="language__text mr-1" href="#">Укр</a><span class="mr-1">/</span><a class="language__text" href="#">En</a></div>
+            <div class="col-md-1"><a class="basket" href="#"><i class="basket__icon fas fa-shopping-basket"></i><span class="basket__count">12</span></a></div>
           </div>
         </div>
-      </div>
+      </section>
       <section>
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Каталог товарів</button>
-                    </h5>
-                  </div>
-                  <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                      </ul>
-                    </div>
-                  </div>
+          <div class="row align-items-stretch">
+            <div class="col-md-3 pr-0">
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                      </ul>
-                    </div>
-                  </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                        <li>22</li>
-                      </ul>
-                    </div>
-                  </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown dropright">
+                <button class="pb-3 pt-3 catalog__toggle btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                <div class="dropdown-menu p-0 border-0">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                    <li><a class="catalog__link btn" href="#">aa</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+            <div class="col-md-9 pl-0">
+              <div class="carousel slide" id="carousel-catalogIndicators" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li class="active" data-target="#carousel-catalogIndicators" data-slide-to="0"></li>
+                  <li data-target="#carousel-catalogIndicators" data-slide-to="1"></li>
+                  <li data-target="#carousel-catalogIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active"><img class="d-block w-100" src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide"></div>
                   <div class="carousel-item"><img class="d-block w-100" src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=Второй slide" alt="First slide"></div>
                   <div class="carousel-item"><img class="d-block w-100" src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=3 slide" alt="First slide"></div>
-                </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div><a class="carousel-control-prev" href="#carousel-catalogIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-catalogIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="submenu p-3 shadow">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <form>
+                <div class="form-row">
+                  <input class="col-md-11 form-control" type="email" name="search" placeholder="Поиск по каталогу">
+                  <button class="col-md-1 btn btn-orange" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-2 ml-auto language"><i class="language__icon fas fa-language mr-1"></i><a class="language__text mr-1" href="#">Укр</a><span class="mr-1">/</span><a class="language__text" href="#">En</a></div>
+            <div class="col-md-1"><a class="basket" href="#"><i class="basket__icon fas fa-shopping-basket"></i><span class="basket__count">12</span></a></div>
           </div>
         </div>
       </section>
