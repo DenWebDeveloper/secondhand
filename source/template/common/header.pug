@@ -1,21 +1,27 @@
 header
     .container
-        .row.border-bottom
-            .col-md-2
-                ul.socials.d-flex.unstyled-list
+        .row.border-bottom.align-items-center
+            .col-md-3.py-3
+                ul.socials.d-flex.list-unstyled
                     li.socials__item
-                        a.socials__link(href="#") facebook
+                        a.socials__link(href='#')
+                            span.d-none Facebook
+                            i.fab.fa-facebook-f
                     li.socials__item
-                        a.socials__link(href="#") facebook
+                        a.socials__link(href='#')
+                            i.fab.fa-twitter
                     li.socials__item
-                        a.socials__link(href="#") facebook
+                        a.socials__link(href='#')
+                            i.fab.fa-google
                     li.socials__item
-                        a.socials__link(href="#") facebook
-            .col-md-2.text-muted.ml-auto
+                        a.socials__link(href='#')
+                            i.fab.fa-instagram
+            .col-md-4.col-lg-3.text-muted.ml-auto.py-3
                 small
+                    i.far.fa-envelope
                     a.text-muted.font-weight-bold(href="mailto:testgmail.g@gmail.com") testgmail.g@gmail.com
-            .col-md-2
-                small.text-muted.font-weight-bold 9:00 - 18:00
+            .col-md-2.py-3
+                small.text-muted.font-weight-bold <i class="far fa-clock"></i> 9:00 - 18:00
     .container
         nav.navbar-expand-lg
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')

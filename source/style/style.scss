@@ -1,10 +1,10 @@
 $grey: #545454;
-
-@import "common/bootstrap";
+@import "lib/swiper";
+@import "lib/bootstrap";
 @import "common/header";
 @import "common/submenu";
 @import "common/catalog-slider";
-
+@import "common/slider";
 @import "common/header-catalog";
 @import "common/products-overview";
 @import "common/product-details";
@@ -15,6 +15,10 @@ $grey: #545454;
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .btn-orange {

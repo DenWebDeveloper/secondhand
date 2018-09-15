@@ -13,17 +13,17 @@
   <body>
     <header>
       <div class="container">
-        <div class="row border-bottom">
-          <div class="col-md-2">
-            <ul class="socials d-flex unstyled-list">
-              <li class="socials__item"><a class="socials__link" href="#">facebook</a></li>
-              <li class="socials__item"><a class="socials__link" href="#">facebook</a></li>
-              <li class="socials__item"><a class="socials__link" href="#">facebook</a></li>
-              <li class="socials__item"><a class="socials__link" href="#">facebook</a></li>
+        <div class="row border-bottom align-items-center">
+          <div class="col-md-3 py-3">
+            <ul class="socials d-flex list-unstyled">
+              <li class="socials__item"><a class="socials__link" href="#"><span class="d-none">Facebook</span><i class="fab fa-facebook-f"></i></a></li>
+              <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-google"></i></a></li>
+              <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
           </div>
-          <div class="col-md-2 text-muted ml-auto"><small><a class="text-muted font-weight-bold" href="mailto:testgmail.g@gmail.com">testgmail.g@gmail.com</a></small></div>
-          <div class="col-md-2"><small class="text-muted font-weight-bold">9:00 - 18:00</small></div>
+          <div class="col-md-4 col-lg-3 text-muted ml-auto py-3"><small><i class="far fa-envelope"></i><a class="text-muted font-weight-bold" href="mailto:testgmail.g@gmail.com">testgmail.g@gmail.com</a></small></div>
+          <div class="col-md-2 py-3"><small class="text-muted font-weight-bold"><i class="far fa-clock"></i> 9:00 - 18:00</small></div>
         </div>
       </div>
       <div class="container">
@@ -151,26 +151,69 @@
           </div>
         </div>
       </section>
-      <section class="submenu p-3 shadow">
+      <section>
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <form>
-                <div class="form-row">
-                  <input class="col-md-11 form-control" type="email" name="search" placeholder="Поиск по каталогу">
-                  <button class="col-md-1 btn btn-orange" type="submit"><i class="fas fa-search"></i></button>
-                </div>
-              </form>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Popular products</h2>
             </div>
-            <div class="col-md-2 ml-auto language"><i class="language__icon fas fa-language mr-1"></i><a class="language__text mr-1" href="#">Укр</a><span class="mr-1">/</span><a class="language__text" href="#">En</a></div>
-            <div class="col-md-1"><a class="basket" href="#"><i class="basket__icon fas fa-shopping-basket"></i><span class="basket__count">12</span></a></div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+              <div class="swiper-slide text-center"><a href="#"><img src="https://via.placeholder.com/800x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide">
+                  <h3>lorem lorem</h3>
+                  <div>$75.00</div>
+                  <ul class="stars">
+                    <li></li>
+                  </ul></a></div>
+            </div>
+            <!-- Add Pagination-->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
     </main>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bundle.js"></script>
   </body>
 </html>
 <!--test-->

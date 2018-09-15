@@ -1,0 +1,22 @@
+.socials {
+  margin: 0;
+}
+
+.socials .socials__item {
+  margin-right: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #989898;
+}
+
+.socials .socials__link {
+  color: #989898;
+}
+
+.fa-envelope,
+.fa-clock {
+  margin-right: 3px;
+}
