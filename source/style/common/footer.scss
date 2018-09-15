@@ -1,0 +1,12 @@
+.footer {
+  border-top: 50px solid #f0f0f0;
+}
+
+.footer__copyright .heart {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: transparent url(../img/heart.svg) bottom left no-repeat;
+  margin-bottom: -5px;
+  background-size: cover;
+}

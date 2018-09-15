@@ -2,21 +2,27 @@
   margin: 0;
 }
 
-.socials .socials__item {
+.socials .socials__link {
+  display: inline-block;
   margin-right: 3px;
   width: 30px;
   height: 30px;
+
   text-align: center;
   line-height: 30px;
+  color: #989898;
+
   background-color: #fff;
   border: 1px solid #989898;
 }
 
-.socials .socials__link {
-  color: #989898;
+.socials .socials__link:hover {
+  color: #ffffff;
+
+  background-color: #969191;
 }
 
-.fa-envelope,
-.fa-clock {
+header .fa-envelope,
+header .fa-clock {
   margin-right: 3px;
 }
