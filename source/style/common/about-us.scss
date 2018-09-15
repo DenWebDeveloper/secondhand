@@ -1,31 +1,24 @@
 .about-us {
   position: relative;
   min-height: 370px;
-
   color: #ffffff;
-
-  background-image: url("../img/about-us-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url("../img/bg-about-us.jpg") no-repeat fixed;
 }
 
 .about-us__left {
-  color: #ffffff;
+  color: #000;
 
-  background-color: #817c7c;
+  background-color: #ffffff;
 }
 
-.about-us_right {
-  padding: 13px;
-  padding-bottom: 5px;
-
-  background-color: #817c7c;
+.about-us__right {
+  min-height: 370px;
+  padding: 0;
 }
 
 .about-us iframe {
   width: 100%;
   min-height: 370px;
-
   border: none;
 }
 

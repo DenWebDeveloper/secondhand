@@ -1,22 +1,21 @@
-section.popular-products
+section.popular-products.mt-5
     .container
         .row
             .popular-products__header.col-md-12.f-flex
-                h2.py-4
+                h2.py-2.m-0
                     i3.fas.fa-fire.mr-3
                     span Popular products
-        .swiper-container.popular-products__body.pt-5
-            .swiper-wrapper
-                each val in [1, 2, 3, 4, 5,7,8]
-                    .swiper-slide.text-center
-                        a(href="#")
-                            img(src="https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=First slide")
-                            h3.mt-2 lorem lorem
-                            div $75.00
-                            ul.stars.list-unstyled.d-flex.justify-content-center.pt-2.pb-4
-                                li
-                                li
-                                li
-                                li
-                                li
-            .swiper-pagination
+            .swiper-container.popular-products__body.pt-4
+                .swiper-wrapper
+                    each val in [1, 2, 3, 4, 5,7,8,9,11,12,13,13]
+                        .swiper-slide.text-center.pr-2.pl-2
+                            a(href="#").d-block.mb-5
+                                img.img-fluid.rounded(src="https://hotline.ua/img/uploads/clients/5b48665985310.jpg")
+                                h3.mt-2 lorem lorem #{val}
+                                div $75.00
+                                ul.stars.mt-2
+                                    each val in [1, 2, 3, 4, 5]
+                                        li.stars__item
+                                            svg.stars__icon
+                                                use(xlink:href='assets/img/symbol/sprite.svg#images--star')
+                .swiper-pagination
