@@ -8,6 +8,8 @@ $grey: #545454;
 @import "common/header-catalog";
 @import "common/products-overview";
 @import "common/product-details";
+@import "common/about-us";
+@import "common/footer";
 @import "common/shopping-cart";
 @import "common/purchase-order";
 
@@ -19,6 +21,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+main {
+  background-color: #f0f0f0;
 }
 
 .btn-orange {
