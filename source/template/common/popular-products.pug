@@ -1,0 +1,17 @@
+section
+    .container
+        .row
+            .col-md-12
+                h2 Popular products
+        .swiper-container
+            .swiper-wrapper
+                each val in [1, 2, 3, 4, 5,7,8]
+                    .swiper-slide.text-center
+                        a(href="#")
+                            img(src="https://via.placeholder.com/800x300?auto=yes&bg=777&fg=555&text=First slide")
+                            h3 lorem lorem
+                            div $75.00
+                            ul.stars
+                                li
+            // Add Pagination
+            .swiper-pagination

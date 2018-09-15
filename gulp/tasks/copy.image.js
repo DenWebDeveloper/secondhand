@@ -3,7 +3,6 @@
 module.exports = function () {
     $.gulp.task('main.image', function () {
         return $.gulp.src(['./source/images/**/*.*','!./source/images/**/*.svg'])
-            .pipe($.gp.image())
             .pipe($.gulp.dest($.config.root + '/assets/img'));
     });
 };
