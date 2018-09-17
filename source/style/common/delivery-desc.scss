@@ -1,0 +1,74 @@
+.delivery-desc {
+  background-color: #ffffff;
+  border-top: 50px solid #f0f0f0;
+}
+
+.delivery-desc__item {
+  padding-left: 40px;
+}
+
+.delivery-desc__item {
+  position: relative;
+}
+
+.delivery-desc__item--new-post:after,
+.delivery-desc__item--ukr-post:after,
+.delivery-desc__item--courier:after{
+  position: absolute;
+  content: '';
+  left: 160px;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.delivery-desc__item--new-post:after {
+  background-image: url('../img/new-post.svg');
+  background-size: auto 24px;
+}
+
+.delivery-desc__item--ukr-post:after {
+  background-image: url('../img/ukr-post.svg');
+  background-size: auto 24px;
+}
+
+.delivery-desc__item--courier:after {
+  background-image: url('../img/courier.svg');
+
+}
+
+.delivery-desc__item--cod:after,
+.delivery-desc__item--card:after,
+.delivery-desc__item--cash:after {
+  position: absolute;
+  content: '';
+  left: 265px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.delivery-desc__item--cod:after {
+  background-image: url('../img/delivery-cod.svg');
+}
+
+.delivery-desc__item--card:after {
+  background-image: url('../img/delivery-card.svg');
+}
+
+.delivery-desc__item--cash:after {
+  background-image: url('../img/delivery-cash.svg');
+}
+
+@media (max-width: 470px) {
+  .delivery-desc__item--new-post:after,
+  .delivery-desc__item--ukr-post:after,
+  .delivery-desc__item--courier:after,
+  .delivery-desc__item--cod:after,
+  .delivery-desc__item--card:after,
+  .delivery-desc__item--cash:after {
+    display: none;
+  }
+}
