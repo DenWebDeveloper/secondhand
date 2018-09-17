@@ -12,6 +12,14 @@ $grey: #545454;
 
 @import "common/socials";
 
+//about.html
+@import "common/about-desc";
+//contacts.html
+@import "common/contacts-desc";
+//delivery.html
+@import "common/delivery-desc";
+
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
 }

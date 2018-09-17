@@ -1,0 +1,17 @@
+.contacts-desc {
+  background-color: #ffffff;
+  border-top: 50px solid #f0f0f0;
+}
+
+.contacts-desc__map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.contacts-desc__map iframe {
+  width: 100%;
+  min-height: 370px;
+}
