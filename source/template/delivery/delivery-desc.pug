@@ -7,8 +7,12 @@ section.delivery-desc
                     p.h4.text-center Шановні клієнти! Наша компанія пропонує декілька варіантів отримання вашого товару. Оберіть нижче найзручніший для Вас!
                 nav
                     #nav-tab.nav.nav-tabs.justify-content-center(role='tablist')
-                        a#nav__payment--tab.nav-item.nav-link.active(data-toggle='tab', href='#nav__payment', role='tab', aria-controls='nav__payment', aria-selected='true') Оплата
-                        a#nav__delivery--tab.nav-item.nav-link(data-toggle='tab', href='#nav__delivery', role='tab', aria-controls='nav__delivery', aria-selected='false') Доставка
+                        a#nav__payment--tab.nav-item.nav-link.active(data-toggle='tab', href='#nav__payment', role='tab', aria-controls='nav__payment', aria-selected='true')
+                            i.fas.fa-dollar-sign.ml-2
+                            span    Оплата
+                        a#nav__delivery--tab.nav-item.nav-link(data-toggle='tab', href='#nav__delivery', role='tab', aria-controls='nav__delivery', aria-selected='false')
+                            i.fas.fa-shipping-fast.mr-2
+                            span    Доставка
                 #nav-tabContent.tab-content
                     #nav__payment.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav__payment--tab')
                         .row.justify-content-md-center.mt-5
