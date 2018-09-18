@@ -3,72 +3,54 @@
   border-top: 50px solid #f0f0f0;
 }
 
-.delivery-desc__item {
-  padding-left: 40px;
+.delivery-desc__header {
+  margin-bottom: 70px;
 }
 
-.delivery-desc__item {
-  position: relative;
+.delivery-desc__rounded-box {
+  width: 130px;
+  height: 130px;
+
+  text-align: center;
+
+  border-radius: 50%;
+  border: 2px solid #484848;
 }
 
-.delivery-desc__item--new-post:after,
-.delivery-desc__item--ukr-post:after,
-.delivery-desc__item--courier:after{
-  position: absolute;
-  content: '';
-  left: 160px;
-  top: 0;
-  width: 180px;
-  height: 100%;
+.delivery-desc__rounded-box--icon {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin: 33px auto;
+
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-.delivery-desc__item--new-post:after {
-  background-image: url('../img/new-post.svg');
-  background-size: auto 24px;
-}
-
-.delivery-desc__item--ukr-post:after {
-  background-image: url('../img/ukr-post.svg');
-  background-size: auto 24px;
-}
-
-.delivery-desc__item--courier:after {
-  background-image: url('../img/courier.svg');
-
-}
-
-.delivery-desc__item--cod:after,
-.delivery-desc__item--card:after,
-.delivery-desc__item--cash:after {
-  position: absolute;
-  content: '';
-  left: 265px;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-
-.delivery-desc__item--cod:after {
+.delivery-desc__rounded-box--icon-cod {
   background-image: url('../img/delivery-cod.svg');
 }
 
-.delivery-desc__item--card:after {
+.delivery-desc__rounded-box--icon-card {
   background-image: url('../img/delivery-card.svg');
 }
 
-.delivery-desc__item--cash:after {
+.delivery-desc__rounded-box--icon-cash {
   background-image: url('../img/delivery-cash.svg');
 }
 
-@media (max-width: 470px) {
-  .delivery-desc__item--new-post:after,
-  .delivery-desc__item--ukr-post:after,
-  .delivery-desc__item--courier:after,
-  .delivery-desc__item--cod:after,
-  .delivery-desc__item--card:after,
-  .delivery-desc__item--cash:after {
-    display: none;
-  }
+.delivery-desc__rounded-box--icon-new-post {
+  background-image: url('../img/new-post.svg');
+  background-size: 100px 24px;
 }
+
+.delivery-desc__rounded-box--icon-ukr-post {
+  background-image: url('../img/ukr-post.svg');
+  background-size: 80px 24px;
+}
+
+.delivery-desc__rounded-box--icon-courier {
+  background-image: url('../img/courier.svg');
+}
+
+
