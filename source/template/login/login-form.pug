@@ -1,0 +1,38 @@
+section.login-form
+    .container
+        .row.align-items-start
+            .catalog.col-md-3.pr-md-0
+                each val1 in [1, 2, 3, 4, 5,7,8]
+                    .dropdown.catalog__dropdown
+                        button.pb-3.pt-3.catalog__toggle.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Dropleft
+                        .dropdown-menu.catalog__dropdown-menu.p-0.border-0
+                            ul.list-unstyled.mb-0
+                                each val in [1, 2, 3, 4, 5,7,8,9,0]
+                                    li
+                                        a.catalog__link.btn(href="#") aa #{val + val1}
+            .col-md-9
+                .row.mt-4
+                    .col-md-10.col-lg-8.mx-auto
+                        form.login-form__form.p-3
+                            h3.h2.m-0.my-3.border-bottom Вхід
+                            .form-group
+                                label(for='userEmail') Логін
+                                .input-group
+                                    .input-group-prepend
+                                        .input-group-text
+                                            i.fas.fa-user
+                                    input#userEmail.form-control(type='email', aria-describedby='emailHelp', placeholder='Введіть свою почту' required)
+                                small#emailHelp.form-text.text-muted Ми зобов'язуємося не передавати вашу інформацію третім особам.
+                            .form-group
+                                label(for='userPassword') Пароль
+                                .input-group
+                                    .input-group-prepend
+                                        .input-group-text
+                                            i.fas.fa-key
+                                    input#userPassword.form-control(type='password', placeholder='Введіть свій пароль' required)
+                            .form-group.form-check
+                                input#userRemember.form-check-input(type='checkbox')
+                                label.form-check-label(for='userRemember') Запам'ятати мене
+                            button.btn.btn-success(type='submit') Підтвердити
+                            a.btn.btn-link(href='') Забули пароль?
