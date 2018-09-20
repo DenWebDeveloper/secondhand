@@ -1,0 +1,82 @@
+section.basket-order
+    .container
+        .row.align-items-start
+            .catalog.col-md-3.pr-md-0
+                each val1 in [1, 2, 3, 4, 5,7,8]
+                    .dropdown.catalog__dropdown
+                        button.pb-3.pt-3.catalog__toggle.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Dropleft
+                        .dropdown-menu.catalog__dropdown-menu.p-0.border-0
+                            ul.list-unstyled.mb-0
+                                each val in [1, 2, 3, 4, 5,7,8,9,0]
+                                    li
+                                        a.catalog__link.btn(href="#") aa #{val + val1}
+            .col-md-9.mt-5
+                .row
+                    .col-md-10.mx-auto
+                        table.table.table-bordered
+                            caption.text-right До сплати: 400.00
+                            thead
+                                tr
+                                    th(scope='col') №
+                                    th(scope='col') Назва товару
+                                    th(scope='col') Кількість
+                                    th(scope='col') Розмір
+                                    th(scope='col') Ціна
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Назва товару 1
+                                    td 1
+                                    td S
+                                    td 100.00
+                                tr
+                                    th(scope='row') 2
+                                    td Назва товару 2
+                                    td 2
+                                    td M
+                                    td 100.00
+                                tr
+                                    th(scope='row') 3
+                                    td Назва товару 3
+                                    td 2
+                                    td XS
+                                    td 100.00
+                                tr
+                                    th(scope='row') 4
+                                    td Назва товару 4
+                                    td 4
+                                    td XL
+                                    td 100.00
+                        .d-flex.justify-content-end
+                            button.btn.btn-success(type='button', data-toggle='modal', data-target='#basketModal') Купити
+                        #basketModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='basketModal', aria-hidden='true')
+                            .modal-dialog.modal-dialog-centered(role='document')
+                                .modal-content
+                                    .modal-header
+                                        h5#exampleModalCenterTitle.modal-title Форма Замовлення
+                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                            span(aria-hidden='true') ×
+                                    .modal-body
+                                        form
+                                            .form-group
+                                                label.col-form-label(for='buyerName') ПІП:
+                                                input#buyerName.form-control(type='text' placeholder="Введіть своє ім'я")
+                                            .form-group
+                                                label.col-form-label(for='buyerAddress') Адреса:
+                                                input#buyerAddress.form-control(type='text' placeholder="Куди нам відправити ваше замовлення?")
+                                            .form-group
+                                                label.col-form-label Спосіб доставки:
+                                                select.custom-select
+                                                    option(data-content="<i class='fa fa-cutlery'></i>" selected='') Нова Почта
+                                                    option(data-icon='https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg' value='1') Укр. Почта
+                                                    option(data-icon='assets/img/courier.svg' value='2') Кур'єром
+                                            .form-group
+                                                label.col-form-label Спосіб оплати:
+                                                select.custom-select
+                                                    option(data-icon='assets/img/delivery-cod.svg' selected='') Наложеним платежем
+                                                    option(data-icon='assets/img/delivery-card.svg' value='1') Банківською карткою
+                                                    option(data-icon='assets/img/delivery-cash.svg' value='2') Готівкою
+                                    .modal-footer
+                                        .d-flex.justify-content-end
+                                            button.btn.btn-success(type='submit') Оформити замовлення
