@@ -1,0 +1,219 @@
+section.catalog-items
+    .container
+        .row.align-items-start
+            .catalog.col-md-3.pr-md-0
+                each val1 in [1, 2, 3, 4, 5,7,8]
+                    .dropdown.catalog__dropdown
+                        button.pb-3.pt-3.catalog__toggle.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Dropleft
+                        .dropdown-menu.catalog__dropdown-menu.p-0.border-0
+                            ul.list-unstyled.mb-0
+                                each val in [1, 2, 3, 4, 5,7,8,9,0]
+                                    li
+                                        a.catalog__link.btn(href="#") aa #{val + val1}
+            .col-md-9
+                .row
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити
+                    .col-md-4.my-3
+                        .card
+                            a(href='#')
+                                img.card-img-top(src="assets/img/catalog-test-image.jpg", alt="Фото товару")
+                            .card-body
+                                h4.card-title
+                                    a.catalog-items__card-header(href="#") Lorem ipsum dolor sit amet.
+                                p.m-0
+                                    i.fas.fa-ruler-combined.pr-2
+                                    span.h4 Розміри (UKR):
+                                    ul.list-unstyled.d-flex.flex-wrap
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 46/48
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 48/50
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 50/52
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 52/54
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 54/56
+                                        li.pr-2
+                                            a.catalog-items__size-link.lead(href='#') 56/58
+                                div.mb-4
+                                    h4.mb-3
+                                        i.fas.fa-palette.pr-2
+                                        span.h4 Обрати колір:
+                                    .catalog-items__colors.d-flex.flex-wrap
+                                        .catalog-items__color.catalog-items__colors--red.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--green.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--yellow.mr-2.mb-2
+                                        .catalog-items__color.catalog-items__colors--blue.mr-2.mb-2
+                                .d-flex.justify-content-center
+                                    a.btn.btn-warning(href='#') Купити

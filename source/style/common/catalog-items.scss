@@ -1,0 +1,39 @@
+.catalog-items__card-header {
+  color: #000000;
+}
+
+.catalog-items__card-header:hover {
+  color: #000000;
+}
+
+.catalog-items__size-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.catalog-items__size-link:hover {
+  color: #4a4848;
+}
+
+.catalog-items__color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.catalog-items__colors--red {
+  background-color: red;
+}
+
+.catalog-items__colors--green {
+  background-color: green;
+}
+
+.catalog-items__colors--yellow {
+  background-color: yellow;
+}
+
+.catalog-items__colors--blue {
+  background-color: blue;
+}
