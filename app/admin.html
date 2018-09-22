@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Secondhand</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="admin-header navbar flex-md-nowrap p-0"><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">SECONDHAND</a>
+      <ul class="navbar-nav px-3 ml-auto">
+        <li class="nav-item text-nowrap d-flex align-items-center"><a class="nav-link mr-2" href="#">Admin-name</a><a class="nav-link mr-2" href="#">Sign out</a><i class="fas fa-user-cog"></i></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 mt-3">
+            <ul class="admin-sidebar m-0 flex-column list-unstyled">
+              <li class="admin-sidebar__item p-2 d-flex flex-column">
+                <h4 class="h5 border-bottom">Замовлення:</h4><a class="admin-sidebar__link border-bottom py-2" href="#adminSidebarActive" role="tab" aria-controls="adminSidebarActive" aria-selected="true"><span class="h3">Активні</span></a><a class="admin-sidebar__link py-2" href="#adminSidebarDisabled" role="tab" aria-controls="adminSidebarDisabled" aria-selected="false"><span class="h3">Неактивні</span></a>
+              </li>
+              <li class="admin-sidebar__item p-2"><a class="admin-sidebar__link py-2" href="#"><span class="h3">Користувачі</span></a></li>
+              <li class="admin-sidebar__item p-2"><a class="admin-sidebar__link py-2" href="#"><span class="h3">Групи</span></a></li>
+              <li class="p-2"><a class="admin-sidebar__link py-2" href="#"><span class="h3">Товари</span></a></li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <div>
+              <h3 class="h2 m-0 my-3">Замовлення</h3>
+              <div class="border p-3">
+                <form>
+                  <div class="form-group row">
+                    <label class="col-md-4 col-form-label" for="adminSearch">Активні/Неактивні</label>
+                    <div class="col-md-6">
+                      <input class="form-control" id="adminSearch" type="text" placeholder="Пошук...">
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-primary" type="submit">Знайти</button>
+                    </div>
+                  </div>
+                </form>
+                <div>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Замовник</th>
+                        <th scope="col">email</th>
+                        <th scope="col">Номер телефону</th>
+                        <th scope="col">Ціна</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Ім'я замовника 1</td>
+                        <td>exampleEmail@gmail.com</td>
+                        <td>+380950000000</td>
+                        <td>400.00</td>
+                        <td>
+                          <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#adminOrderModal">Відкрити замовлення</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Ім'я замовника 2</td>
+                        <td>exampleEmail@gmail.com</td>
+                        <td>+380950000000</td>
+                        <td>500.00</td>
+                        <td>
+                          <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#adminOrderModal">Відкрити замовлення</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Ім'я замовника 3</td>
+                        <td>exampleEmail@gmail.com</td>
+                        <td>+380950000000</td>
+                        <td>200.00</td>
+                        <td>
+                          <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#adminOrderModal">Відкрити замовлення</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Ім'я замовника 4</td>
+                        <td>exampleEmail@gmail.com</td>
+                        <td>+380950000000</td>
+                        <td>300.00</td>
+                        <td>
+                          <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#adminOrderModal">Відкрити замовлення</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h4 class="h5">Сторінка 1 з 4</h4>
+                  <nav aria-label="Admin pagination">
+                    <ul class="pagination">
+                      <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Наступна</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="adminOrderModal" tabindex="-1" role="dialog" aria-labelledby="adminOrderModal" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title mr-5">Замовлення №1</h5>
+                        <div class="input-group admin-orders__status ml-5">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="adminOrderStatus">Статус</label>
+                          </div>
+                          <select class="custom-select" id="adminOrderStatus">
+                            <option selected="">Lorem ipsum.</option>
+                            <option value="2">Lorem ipsum.</option>
+                            <option value="3">Lorem ipsum.</option>
+                          </select>
+                        </div>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">№</th>
+                              <th scope="col">Назва товару</th>
+                              <th scope="col">К-сть</th>
+                              <th scope="col">Розмір</th>
+                              <th scope="col">Ціна</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Назва товару 1</td>
+                              <td>1</td>
+                              <td>S</td>
+                              <td>100.00</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Назва товару 2</td>
+                              <td>2</td>
+                              <td>M</td>
+                              <td>100.00</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Назва товару 3</td>
+                              <td>2</td>
+                              <td>XS</td>
+                              <td>100.00</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Назва товару 4</td>
+                              <td>4</td>
+                              <td>XL</td>
+                              <td>100.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="row">
+                          <div class="col-6">
+                            <label class="input-group-text" for="adminOrderPaymentType">Спосіб оплати:
+                              <select class="custom-select ml-2" id="adminOrderPaymentType">
+                                <option selected="">Наложеним платежем</option>
+                                <option value="2">Банківською карткою</option>
+                                <option value="3">Готівкою</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-success" type="submit">Підтвердити</button>
+                          <button class="btn btn-danger ml-2" type="submit">Відхилити</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between p-3">
+                <h3 class="h2 m-0">Групи</h3>
+                <button class="btn-secondary" type="button" data-toggle="modal" data-target="#adminCreateGroup">+ Створити групу</button>
+              </div>
+              <div class="border p-3">
+                <h3 class="h3 font-weight-bold border-bottom">Lorem ipsum dolor.</h3>
+                <ul class="ml-3 list-unstyled">
+                  <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                  <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                  <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                  <li class="h5">Lorem ipsum dolor.</li>
+                </ul>
+                <h3 class="h3 font-weight-bold border-bottom">Lorem ipsum dolor.
+                  <ul class="ml-3 list-unstyled">
+                    <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                    <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                    <li class="h5 border-bottom">Lorem ipsum dolor.</li>
+                    <li class="h5">Lorem ipsum dolor.</li>
+                  </ul>
+                </h3>
+              </div>
+              <div class="modal fade bd-example-modal-lg" id="adminCreateGroup" tabindex="-1" role="dialog" aria-labelledby="adminCreateGroup" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title mr-5">Створити групу, редагування</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="form-group">
+                            <label class="col-form-label" for="adminGroupName">Назва групи:</label>
+                            <input class="form-control" id="adminGroupName" type="text">
+                          </div>
+                          <div class="form-group">
+                            <label class="col-form-label" for="adminSubGroupName">Назва підгрупи:</label>
+                            <input class="form-control" id="adminSubGroupName" type="text">
+                          </div>
+                          <div class="form-group">
+                            <label class="col-form-label" for="adminGroupModalDesc">Опис:</label>
+                            <textarea class="form-control" id="adminGroupModalDesc"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                          <form>
+                            <div class="form-group">
+                              <label for="adminGroupPicture">Додати фото</label>
+                              <input class="form-control-file" id="adminGroupPicture" type="file">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="d-flex justify-content-end">
+                        <button class="btn btn-secondary" type="submit">Приховати</button>
+                        <button class="btn btn-danger ml-2" type="submit">Видалити</button>
+                        <button class="btn btn-success ml-2" type="submit">Створити</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="border p-3">
+                <div>
+                  <form>
+                    <div class="form-group row">
+                      <label class="col-md-2 col-form-label" for="adminSearch">Товари</label>
+                      <div class="col-md-6">
+                        <input class="form-control" id="adminSearch" type="text" placeholder="Пошук...">
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary" type="submit">Знайти</button>
+                      </div>
+                      <div class="col-md-2 text-right">
+                        <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#adminCreateProduct">+ Додати</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">№</th>
+                      <th scope="col">Назва</th>
+                      <th scope="col">Розмір</th>
+                      <th scope="col">Колір</th>
+                      <th scope="col">Ціна</th>
+                      <th scope="col">Короткий опис</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Назва товару 1</td>
+                      <td>S</td>
+                      <td>чорний</td>
+                      <td>100.00</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>
+                        <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#adminCreateProduct">Редагувати</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Назва товару 2</td>
+                      <td>M</td>
+                      <td>чорний</td>
+                      <td>100.00</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>
+                        <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#adminCreateProduct">Редагувати</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Назва товару 3</td>
+                      <td>XS</td>
+                      <td>чорний</td>
+                      <td>100.00</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>
+                        <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#adminCreateProduct">Редагувати</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Назва товару 4</td>
+                      <td>XL</td>
+                      <td>чорний</td>
+                      <td>100.00</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>
+                        <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#adminCreateProduct">Редагувати</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-between">
+                  <h4 class="h5">Сторінка 1 з 4</h4>
+                  <nav aria-label="Admin pagination">
+                    <ul class="pagination">
+                      <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Наступна</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="adminCreateProduct" tabindex="-1" role="dialog" aria-labelledby="adminCreateProduct" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title mr-5">Додати товар, редагування</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-9">
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminGroupName">Назва групи:</label>
+                              <input class="form-control" id="adminGroupName" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminSubGroupName">Назва підгрупи:</label>
+                              <input class="form-control" id="adminSubGroupName" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminProductName">Назва Товару:</label>
+                              <input class="form-control" id="adminProductName" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminProductSize">Розмір:</label>
+                              <select class="custom-select" id="adminProductSize">
+                                <option selected="">XS</option>
+                                <option value="1">S</option>
+                                <option value="2">L</option>
+                                <option value="3">Xl</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminProductColor">Колір:</label>
+                              <select class="custom-select" id="adminProductColor">
+                                <option selected="">lorem</option>
+                                <option value="1">lorem</option>
+                                <option value="2">lorem</option>
+                                <option value="3">lorem</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminProductPrice">Ціна:</label>
+                              <input class="form-control" id="adminProductPrice" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="col-form-label" for="adminGroupModalDesc">Опис:</label>
+                              <textarea class="form-control" id="adminGroupModalDesc"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-3 my-auto">
+                            <form>
+                              <div class="form-group">
+                                <label for="adminGroupPicture">Додати фото</label>
+                                <input class="form-control-file" id="adminGroupPicture" type="file">
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-secondary" type="submit">Приховати</button>
+                          <button class="btn btn-danger ml-2" type="submit">Видалити</button>
+                          <button class="btn btn-success ml-2" type="submit">Створити</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>

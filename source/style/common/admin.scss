@@ -1,0 +1,24 @@
+//header
+.admin-header {
+  border-bottom: 5px solid black;
+}
+
+//sidebar
+.admin-sidebar {
+  border: 3px solid black;
+  border-radius: 3%;
+}
+
+.admin-sidebar__item {
+  border-bottom: 3px solid black;
+}
+
+.admin-sidebar__link,
+.admin-sidebar__link:hover {
+  color: black;
+}
+
+//admin order modal
+.admin-orders__status {
+  width: 50%;
+}

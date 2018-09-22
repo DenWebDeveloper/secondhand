@@ -1,0 +1,319 @@
+.container-fluid
+    .row
+        .col-3.mt-3
+            ul.admin-sidebar.m-0.flex-column.list-unstyled
+                li.admin-sidebar__item.p-2.d-flex.flex-column
+                    h4.h5.border-bottom Замовлення:
+                    a.admin-sidebar__link.border-bottom.py-2(href='#adminSidebarActive', role='tab', aria-controls='adminSidebarActive', aria-selected='true')
+                        span.h3 Активні
+                    a.admin-sidebar__link.py-2(href='#adminSidebarDisabled', role='tab', aria-controls='adminSidebarDisabled', aria-selected='false')
+                        span.h3 Неактивні
+                li.admin-sidebar__item.p-2
+                    a.admin-sidebar__link.py-2(href='#')
+                        span.h3 Користувачі
+                li.admin-sidebar__item.p-2
+                    a.admin-sidebar__link.py-2(href='#')
+                        span.h3 Групи
+                li.p-2
+                    a.admin-sidebar__link.py-2(href='#')
+                        span.h3 Товари
+        .col-9
+            div
+                h3.h2.m-0.my-3 Замовлення
+                .border.p-3
+                    form
+                        .form-group.row
+                            label.col-md-4.col-form-label(for='adminSearch') Активні/Неактивні
+                            .col-md-6
+                                input#adminSearch.form-control(type='text', placeholder='Пошук...')
+                            .col-md-2
+                                button.btn.btn-primary(type='submit') Знайти
+                    div
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th(scope='col') №
+                                    th(scope='col') Замовник
+                                    th(scope='col') email
+                                    th(scope='col') Номер телефону
+                                    th(scope='col') Ціна
+                                    th(scope='col')
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Ім'я замовника 1
+                                    td exampleEmail@gmail.com
+                                    td +380950000000
+                                    td 400.00
+                                    td
+                                        button.btn.btn-warning(type='button', data-toggle='modal', data-target='#adminOrderModal') Відкрити замовлення
+                                tr
+                                    th(scope='row') 2
+                                    td Ім'я замовника 2
+                                    td exampleEmail@gmail.com
+                                    td +380950000000
+                                    td 500.00
+                                    td
+                                        button.btn.btn-warning(type='button', data-toggle='modal', data-target='#adminOrderModal') Відкрити замовлення
+                                tr
+                                    th(scope='row') 3
+                                    td Ім'я замовника 3
+                                    td exampleEmail@gmail.com
+                                    td +380950000000
+                                    td 200.00
+                                    td
+                                        button.btn.btn-warning(type='button', data-toggle='modal', data-target='#adminOrderModal') Відкрити замовлення
+                                tr
+                                    th(scope='row') 4
+                                    td Ім'я замовника 4
+                                    td exampleEmail@gmail.com
+                                    td +380950000000
+                                    td 300.00
+                                    td
+                                        button.btn.btn-warning(type='button', data-toggle='modal', data-target='#adminOrderModal') Відкрити замовлення
+                    .d-flex.justify-content-between
+                        h4.h5 Сторінка 1 з 4
+                        nav(aria-label='Admin pagination')
+                            ul.pagination
+                                li.page-item.disabled
+                                    a.page-link(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link(href='#') Наступна
+                    #adminOrderModal.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='adminOrderModal', aria-hidden='true')
+                        .modal-dialog.modal-lg
+                            .modal-content
+                                .modal-header
+                                    h5.modal-title.mr-5 Замовлення №1
+                                    .input-group.admin-orders__status.ml-5
+                                        .input-group-prepend
+                                            label.input-group-text(for='adminOrderStatus') Статус
+                                        select#adminOrderStatus.custom-select
+                                            option(selected='') Lorem ipsum.
+                                            option(value='2') Lorem ipsum.
+                                            option(value='3') Lorem ipsum.
+                                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                .modal-body
+                                    table.table.table-bordered
+                                        thead
+                                            tr
+                                                th(scope='col') №
+                                                th(scope='col') Назва товару
+                                                th(scope='col') К-сть
+                                                th(scope='col') Розмір
+                                                th(scope='col') Ціна
+                                        tbody
+                                            tr
+                                                th(scope='row') 1
+                                                td Назва товару 1
+                                                td 1
+                                                td S
+                                                td 100.00
+                                            tr
+                                                th(scope='row') 2
+                                                td Назва товару 2
+                                                td 2
+                                                td M
+                                                td 100.00
+                                            tr
+                                                th(scope='row') 3
+                                                td Назва товару 3
+                                                td 2
+                                                td XS
+                                                td 100.00
+                                            tr
+                                                th(scope='row') 4
+                                                td Назва товару 4
+                                                td 4
+                                                td XL
+                                                td 100.00
+                                    .row
+                                        .col-6
+                                            label.input-group-text(for='adminOrderPaymentType') Спосіб оплати:
+                                                select#adminOrderPaymentType.custom-select.ml-2
+                                                    option(selected='') Наложеним платежем
+                                                    option(value='2') Банківською карткою
+                                                    option(value='3') Готівкою
+                                .modal-footer
+                                    .d-flex.justify-content-end
+                                        button.btn.btn-success(type='submit') Підтвердити
+                                        button.btn.btn-danger.ml-2(type='submit') Відхилити
+            div
+                .d-flex.justify-content-between.p-3
+                    h3.h2.m-0 Групи
+                    button.btn-secondary(type="button", data-toggle='modal', data-target='#adminCreateGroup') + Створити групу
+                .border.p-3
+                    h3.h3.font-weight-bold.border-bottom Lorem ipsum dolor.
+                    ul.ml-3.list-unstyled
+                        li.h5.border-bottom Lorem ipsum dolor.
+                        li.h5.border-bottom Lorem ipsum dolor.
+                        li.h5.border-bottom Lorem ipsum dolor.
+                        li.h5 Lorem ipsum dolor.
+                    h3.h3.font-weight-bold.border-bottom Lorem ipsum dolor.
+                        ul.ml-3.list-unstyled
+                            li.h5.border-bottom Lorem ipsum dolor.
+                            li.h5.border-bottom Lorem ipsum dolor.
+                            li.h5.border-bottom Lorem ipsum dolor.
+                            li.h5 Lorem ipsum dolor.
+                #adminCreateGroup.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='adminCreateGroup', aria-hidden='true')
+                    .modal-dialog.modal-lg
+                        .modal-content
+                            .modal-header
+                                h5.modal-title.mr-5 Створити групу, редагування
+                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') ×
+                            .modal-body
+                                .row
+                                    .col-9
+                                        .form-group
+                                            label.col-form-label(for='adminGroupName') Назва групи:
+                                            input#adminGroupName.form-control(type='text')
+                                        .form-group
+                                            label.col-form-label(for='adminSubGroupName') Назва підгрупи:
+                                            input#adminSubGroupName.form-control(type='text')
+                                        .form-group
+                                            label.col-form-label(for='adminGroupModalDesc') Опис:
+                                            textarea#adminGroupModalDesc.form-control
+                                    .col-3.my-auto
+                                        form
+                                            .form-group
+                                                label(for='adminGroupPicture') Додати фото
+                                                input#adminGroupPicture.form-control-file(type='file')
+                            .modal-footer
+                                .d-flex.justify-content-end
+                                    button.btn.btn-secondary(type='submit') Приховати
+                                    button.btn.btn-danger.ml-2(type='submit') Видалити
+                                    button.btn.btn-success.ml-2(type='submit') Створити
+            div
+                .border.p-3
+                    div
+                        form
+                            .form-group.row
+                                label.col-md-2.col-form-label(for='adminSearch') Товари
+                                .col-md-6
+                                    input#adminSearch.form-control(type='text', placeholder='Пошук...')
+                                .col-md-2
+                                    button.btn.btn-primary(type='submit') Знайти
+                                .col-md-2.text-right
+                                    button.btn.btn-success(type='submit', data-toggle='modal', data-target='#adminCreateProduct') + Додати
+                    table.table.table-bordered
+                        thead
+                            tr
+                                th(scope='col') №
+                                th(scope='col') Назва
+                                th(scope='col') Розмір
+                                th(scope='col') Колір
+                                th(scope='col') Ціна
+                                th(scope='col') Короткий опис
+                                th(scope='col')
+                        tbody
+                            tr
+                                th(scope='row') 1
+                                td Назва товару 1
+                                td S
+                                td чорний
+                                td 100.00
+                                td Lorem ipsum dolor sit amet.
+                                td
+                                    button.btn.btn-secondary(type='submit', data-toggle='modal', data-target='#adminCreateProduct') Редагувати
+                            tr
+                                th(scope='row') 2
+                                td Назва товару 2
+                                td M
+                                td чорний
+                                td 100.00
+                                td Lorem ipsum dolor sit amet.
+                                td
+                                    button.btn.btn-secondary(type='submit', data-toggle='modal', data-target='#adminCreateProduct') Редагувати
+                            tr
+                                th(scope='row') 3
+                                td Назва товару 3
+                                td XS
+                                td чорний
+                                td 100.00
+                                td Lorem ipsum dolor sit amet.
+                                td
+                                    button.btn.btn-secondary(type='submit', data-toggle='modal', data-target='#adminCreateProduct') Редагувати
+                            tr
+                                th(scope='row') 4
+                                td Назва товару 4
+                                td XL
+                                td чорний
+                                td 100.00
+                                td Lorem ipsum dolor sit amet.
+                                td
+                                    button.btn.btn-secondary(type='submit', data-toggle='modal', data-target='#adminCreateProduct') Редагувати
+                    .d-flex.justify-content-between
+                        h4.h5 Сторінка 1 з 4
+                        nav(aria-label='Admin pagination')
+                            ul.pagination
+                                li.page-item.disabled
+                                    a.page-link(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link(href='#') Наступна
+                    #adminCreateProduct.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='adminCreateProduct', aria-hidden='true')
+                        .modal-dialog.modal-lg
+                            .modal-content
+                                .modal-header
+                                    h5.modal-title.mr-5 Додати товар, редагування
+                                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-9
+                                            .form-group
+                                                label.col-form-label(for='adminGroupName') Назва групи:
+                                                input#adminGroupName.form-control(type='text')
+                                            .form-group
+                                                label.col-form-label(for='adminSubGroupName') Назва підгрупи:
+                                                input#adminSubGroupName.form-control(type='text')
+                                            .form-group
+                                                label.col-form-label(for='adminProductName') Назва Товару:
+                                                input#adminProductName.form-control(type='text')
+                                            .form-group
+                                                label.col-form-label(for='adminProductSize') Розмір:
+                                                select#adminProductSize.custom-select
+                                                    option(selected='') XS
+                                                    option(value='1') S
+                                                    option(value='2') L
+                                                    option(value='3') Xl
+                                            .form-group
+                                                label.col-form-label(for='adminProductColor') Колір:
+                                                select#adminProductColor.custom-select
+                                                    option(selected='') lorem
+                                                    option(value='1') lorem
+                                                    option(value='2') lorem
+                                                    option(value='3') lorem
+                                            .form-group
+                                                label.col-form-label(for='adminProductPrice') Ціна:
+                                                input#adminProductPrice.form-control(type='text')
+                                            .form-group
+                                                label.col-form-label(for='adminGroupModalDesc') Опис:
+                                                textarea#adminGroupModalDesc.form-control
+                                        .col-3.my-auto
+                                            form
+                                                .form-group
+                                                    label(for='adminGroupPicture') Додати фото
+                                                    input#adminGroupPicture.form-control-file(type='file')
+                                .modal-footer
+                                    .d-flex.justify-content-end
+                                        button.btn.btn-secondary(type='submit') Приховати
+                                        button.btn.btn-danger.ml-2(type='submit') Видалити
+                                        button.btn.btn-success.ml-2(type='submit') Створити
+
+
+
+
+
+
+
+
+
